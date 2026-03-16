@@ -14,12 +14,15 @@ export default function Referral() {
   setReferralLink(link);
 }
 
+function copyLink() {
+  navigator.clipboard.writeText(referralLink);
+}
+
   return (
     <div>
+        
 
-      <button onClick={generateReferral}>
-        Generate Referral Link
-      </button>
+      <button onClick={copyLink}>Copy Link</button>
 
       {referralLink && (
         <p>{referralLink}</p>
