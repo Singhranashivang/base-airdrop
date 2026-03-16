@@ -1,6 +1,8 @@
 "use client";
 
 import { useWallet } from "../hooks/useWallet";
+import { formatAddress } from "../utils/formatAddress";
+
 
 export default function WalletConnect() {
 
@@ -9,7 +11,7 @@ export default function WalletConnect() {
   return (
     <div>
       {address ? (
-        <p>{address}</p>
+       <p>{formatAddress(address)}</p>
       ) : (
         <button onClick={connectWallet}>
           Connect Wallet
