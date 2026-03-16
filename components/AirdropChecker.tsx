@@ -4,10 +4,16 @@ import { useState } from "react";
 
 export default function AirdropChecker() {
 
-  const [eligible, setEligible] = useState(false);
+  const [eligible, setEligible] = useState<boolean | null>(null);
+  const [loading, setLoading] = useState(false);
 
   function checkEligibility() {
-    setEligible(true);
+    setLoading(true);
+
+    setTimeout(() => {
+      setEligible(Math.random() > 0.5);
+      setLoading(false);
+    }, 1000);
   }
 
   return (
@@ -16,7 +22,11 @@ export default function AirdropChecker() {
         Check Airdrop
       </button>
 
-      {eligible && <p>You are eligible!</p>}
+      {loading && <p>Checking...</p>}
+
+      {eligible !== null && (
+        <p>{eligible ? "You are eligible!" : "Not eligible"}</p>
+      )}
     </div>
   );
 }
