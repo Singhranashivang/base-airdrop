@@ -1,9 +1,20 @@
 "use client";
 
+import { useWallet } from "../hooks/useWallet";
+
 export default function WalletConnect() {
+
+  const { address, connectWallet } = useWallet();
+
   return (
-    <button>
-      Connect Wallet
-    </button>
+    <div>
+      {address ? (
+        <p>{address}</p>
+      ) : (
+        <button onClick={connectWallet}>
+          Connect Wallet
+        </button>
+      )}
+    </div>
   );
 }
