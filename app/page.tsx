@@ -1,5 +1,8 @@
 import WalletConnect from "../components/WalletConnect";
 import AirdropChecker from "../components/AirdropChecker";
+import ClaimButton from "../components/ClaimButton";
+
+
 
 export default function Home() {
   return (
@@ -7,6 +10,7 @@ export default function Home() {
       <h1>Base Airdrop Dashboard</h1>
       <WalletConnect />
       <AirdropChecker />
+      <ClaimButton />
     </main>
   );
 }
