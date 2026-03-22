@@ -2,7 +2,7 @@ import WalletConnect from "../components/WalletConnect";
 import AirdropChecker from "../components/AirdropChecker";
 import ClaimButton from "../components/ClaimButton";
 import Referral from "../components/Referral";
-
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <AirdropChecker />
       <ClaimButton />
       <Referral />
+      <Footer />
     </main>
   );
 }
