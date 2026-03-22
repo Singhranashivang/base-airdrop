@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <main>
+      <div style={{ padding: "20px" }}></div>
       <h1>Base Airdrop Dashboard</h1>
       <WalletConnect />
       <AirdropChecker />
