@@ -13,9 +13,7 @@ export default function WalletConnect() {
       {address ? (
        <p>{formatAddress(address)}</p>
       ) : (
-        <button onClick={connectWallet}>
-          Connect Wallet
-        </button>
+       <button className="connect-btn">Connect Wallet</button>
       )}
     </div>
   );
