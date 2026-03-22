@@ -3,6 +3,7 @@ import AirdropChecker from "../components/AirdropChecker";
 import ClaimButton from "../components/ClaimButton";
 import Referral from "../components/Referral";
 import Footer from "../components/Footer";
+import Leaderboard from "../components/Leaderboard";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ClaimButton />
       <Referral />
       <Footer />
+      <Leaderboard />
     </main>
   );
 }
