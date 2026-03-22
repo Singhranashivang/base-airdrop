@@ -19,7 +19,7 @@ export default function AirdropChecker() {
 <button onClick={checkEligibility}>
   Check Again
 </button>
-<p>Click to check eligibility</p>
+<p>Click check eligibility</p>
 
       {eligible !== null && (
 <p>{eligible ? "You are eligible 🎉" : "You are not eligible ❌"}</p>      )}
