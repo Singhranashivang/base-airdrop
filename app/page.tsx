@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <main>
       <div style={{ padding: "20px" }}></div>
-      <h2>Wallet</h2>
+
+<div style={{ marginBottom: "20px" }}>
+  </div>      <h2>Wallet</h2>
 <h2>Airdrop</h2>
 <h2>Leaderboard</h2>
       <WalletConnect />
