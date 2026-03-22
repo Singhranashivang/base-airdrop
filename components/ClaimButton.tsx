@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 const [loading, setLoading] = useState(false);
+
 export default function ClaimButton() {
 
   function claimAirdrop() {
@@ -10,10 +11,12 @@ export default function ClaimButton() {
   }
 
   return (
+    
     <div>
     <button onClick={claimAirdrop} disabled={loading}>
   {loading ? "Processing..." : "Claim Airdrop"}
 </button>
+
     </div>
   );
 }
