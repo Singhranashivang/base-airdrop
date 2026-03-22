@@ -19,6 +19,7 @@ export default function Leaderboard() {
 
   return (
     <div>
+        <div style={{ border: "1px solid black" }}></div>
       <h2>Leaderboard</h2>
       
       {loading && <p>Loading...</p>}
