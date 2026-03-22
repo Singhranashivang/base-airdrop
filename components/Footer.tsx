@@ -1,3 +1,3 @@
 export default function Footer() {
-  return <footer>© Base Airdrop</footer>;
+  return <footer>© 2026 Base Airdrop Dashboard</footer>;
 }
