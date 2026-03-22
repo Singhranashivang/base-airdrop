@@ -9,6 +9,7 @@ export default function Home() {
     <main>
       <div style={{ padding: "20px" }}></div>
       <h1>Base Airdrop Dashboard</h1>
+      <h2>Airdrop Section</h2>
       <WalletConnect />
       <AirdropChecker />
       <ClaimButton />
