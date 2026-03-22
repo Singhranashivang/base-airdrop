@@ -21,7 +21,7 @@ export default function AirdropChecker() {
 </button>
 
       {eligible !== null && (
-<p>{eligible ? "You are eligible 🎉" : "Not eligible ❌"}</p>      )}
+<p>{eligible ? "You are eligible 🎉" : "You are not eligible ❌"}</p>      )}
 
     </div>
   );
