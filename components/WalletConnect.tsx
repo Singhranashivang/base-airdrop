@@ -7,14 +7,16 @@ import { formatAddress } from "../utils/formatAddress";
 export default function WalletConnect() {
 
   const { address, connectWallet } = useWallet();
-
+<p>Connected: {address}</p>
   return (
     <div>
       {address ? (
        <p>{formatAddress(address)}</p>
       ) : (
        <button className="connect-btn">Connect Wallet</button>
+       
       )}
     </div>
+    
   );
 }
