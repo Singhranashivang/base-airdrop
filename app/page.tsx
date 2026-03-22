@@ -12,11 +12,17 @@ export default function Home() {
       <h1>Base Airdrop Dashboard</h1>
       <h2>Airdrop Section</h2>
       <WalletConnect />
+      <hr />
       <AirdropChecker />
+      <hr />
       <ClaimButton />
+      <hr />
       <Referral />
+      <hr />
       <Footer />
+      <hr />
       <Leaderboard />
+      <hr />
     </main>
   );
 }

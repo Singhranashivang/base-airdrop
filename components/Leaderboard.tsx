@@ -20,7 +20,9 @@ export default function Leaderboard() {
   return (
     <div>
       <h2>Leaderboard</h2>
+      
       {loading && <p>Loading...</p>}
+      
 
       {users.map((user: any, index) => (
         <p key={index}>
