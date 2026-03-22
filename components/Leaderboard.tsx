@@ -5,16 +5,22 @@ import { useEffect, useState } from "react";
 export default function Leaderboard() {
 
   const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch("/api/leaderboard")
-      .then(res => res.json())
-      .then(data => setUsers(data));
-  }, []);
+ useEffect(() => {
+  setLoading(true);
+  fetch("/api/leaderboard")
+    .then(res => res.json())
+    .then(data => {
+      setUsers(data);
+      setLoading(false);
+    });
+}, []);
 
   return (
     <div>
       <h2>Leaderboard</h2>
+      {loading && <p>Loading...</p>}
 
       {users.map((user: any, index) => (
         <p key={index}>
