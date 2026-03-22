@@ -14,7 +14,7 @@ export default function ClaimButton() {
     
     <div>
     <button onClick={claimAirdrop} disabled={loading}>
-  {loading ? "Processing..." : "Claim Airdrop"}
+  {loading ? "Processing..." : "Claim Your Airdrop"}
 </button>
 
     </div>
