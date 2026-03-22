@@ -9,8 +9,9 @@ export default function Home() {
   return (
     <main>
       <div style={{ padding: "20px" }}></div>
-      <h1>Base Airdrop Dashboard</h1>
-      <h2>Airdrop Section</h2>
+      <h2>Wallet</h2>
+<h2>Airdrop</h2>
+<h2>Leaderboard</h2>
       <WalletConnect />
       <hr />
       <AirdropChecker />
